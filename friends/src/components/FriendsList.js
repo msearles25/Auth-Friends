@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
+import AddFriend from './AddFriend';
 
-const FriendsList = props => {
+const FriendsList = () => {
     const [friends, setFriends] = useState([]);
 
     useEffect(() => {
         axiosWithAuth()
             .get('/friends')
+            // .then(res => setFriends(res.data))
             .then(res => setFriends(res.data))
             .catch(err => console.log(err))
     }, [])
@@ -15,6 +17,8 @@ const FriendsList = props => {
 
     return (
         <div>
+            <AddFriend setFriends={setFriends}/>
+            {console.log(friends)}
             {friends.map(friend => (
                 <div key={friend.id}>
                     <h3>{friend.name}</h3>
