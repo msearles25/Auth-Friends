@@ -16,7 +16,7 @@ const AddFriend = props => {
         e.preventDefault();
         axiosWithAuth()
             .post('/friends', friend)
-            .then(res =>  props.setFriends(res.data))
+            .then(res => props.setFriends(res.data))
         setFriend({
             name: '',
             age: '',
