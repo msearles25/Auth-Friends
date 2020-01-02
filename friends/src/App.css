@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+/* my styles */
+body{
+  background-color: #6b91e4;
+}
+
+form {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 40%;
+  background: #fcfbee;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  width: 60%;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px;
+  margin: 0 auto;
+  background: #6b91e4;
+  width: 60%;
+}
+
+.navLinks {
+  margin: 1rem 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #cfcfcf;
+  margin: 2rem 3rem;
+}
+
+.friendList {
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 800px;
+}
+.friendCard {
+  background: #fcfbee;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 45%;
+  width: 40%;
+}
